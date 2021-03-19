@@ -13,6 +13,9 @@
 % Paquetes de la AMS para ampliar matemática
 \usepackage{amsmath, amsthm, amsfonts, amssymb}
 
+% Extensión de amsmath
+\usepackage{mathtools}
+
 % Para agregar una posibilidad de font matemático extra
 \usepackage{mathrsfs}
 
@@ -197,7 +200,7 @@ En la tabla \ref{tab:frutas} vemos los nombres de las frutas y verduras que se m
 \end{prob}
 
 % Problema 4
-\begin{prob} Vamos a escribir una de las ecuaciones más bonitas del mundo. Esta es 
+\begin{prob} Vamos a escribir una de las ecuaciones más bonitas del mundo. Esta es
 \begin{equation}
 	1 + e^{i\pi} = 0
 	\label{eq:masbonita}
@@ -243,10 +246,10 @@ es decir, proporcional al gradiente negativo de $p$. Por último, puedo definir 
 \begin{subequations}
 	\label{eq:maxwell}
 	\begin{align}
-		& \nabla \cdot \vec{E} = \frac{\rho}{\varepsilon_{0}} \\
-		& \nabla \cdot \vec{B} = 0 \\
-		& \nabla \times \vec{E} = -\pd{\vec{B}}{t} \\
-		& \nabla \times \vec{B} = \mu_{0} \left( \vec{J} + \varepsilon_{0} \pd{\vec{E}}{t} \right)
+		\nabla \cdot \vec{E} & = \frac{\rho}{\varepsilon_{0}} \\
+		\nabla \cdot \vec{B} & = 0 \\
+		\nabla \times \vec{E} & = -\pd{\vec{B}}{t} \\
+		\nabla \times \vec{B} & = \mu_{0} \left( \vec{J} + \varepsilon_{0} \pd{\vec{E}}{t} \right)
 	\end{align}
 \end{subequations}
 y referirme a ellas como las ecuaciones \eqref{eq:maxwell}. Estas ecuaciones se conocen como las ecuaciones de Maxwell (\cite{wikipedia}) y verán que cité esa referencia, además de que la verán al final del texto.
